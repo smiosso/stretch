@@ -1,7 +1,7 @@
 let exercises = [
     {
         title: "Bracing maneuver",
-        content: {
+        text: {
             title: "Muscle group:",
             description: "Abdomen.",
             subTitle: "Execution method:",
@@ -33,42 +33,46 @@ let exercises = [
         },
         img: "img_alongamentos/1.2-panturrilhas-bilateral-degrau.png",
         limb: "lower",
-        difficulty: "advenced"
+        difficulty: "advanced"
     },
 ];
+
+let main = document.querySelector("main");
 
 for (let i = 0; i < exercises.length; i++) {
     let current = exercises[i];
 
+
     let div = document.createElement("div");
-    div.appendChild(main);
+    main.appendChild(div);
 
     let title = document.createElement("h6");
-    h6.appendChild(div);
-    h6.textContent = exercises.title;
+    div.appendChild(title);
+    title.textContent = current.title;
 
     let textTitle = document.createElement("p");
-    p.appendChild(div);
-    p.textContent = exercises.text.title;
-    p.className = "p-bold";
+    div.appendChild(textTitle);
+    textTitle.textContent = current.text.title;
+    textTitle.className = "p-bold";
 
     let textDescription = document.createElement("p");
-    p.appendChild(div);
-    p.textContent = exercises.text.description;
-    p.className = "p";
+    div.appendChild(textDescription);
+    textDescription.textContent = current.text.description;
+    textDescription.className = "p";
 
     let textSubtitle = document.createElement("p");
-    p.appendChild(div);
-    p.textContent = exercises.text.subTitle;
-    p.className = "p-bold";
+    div.appendChild(textSubtitle);
+    textSubtitle.textContent = current.text.subTitle;
+    textSubtitle.className = "p-bold";
 
     let textMistakes = document.createElement("p");
-    p.appendChild(div);
-    p.textContent = exercises.text.mistakesDescription;
-    p.className = "p";
+    div.appendChild(textMistakes);
+    textMistakes.textContent = current.text.mistakesDescription;
+    textMistakes.className = "p";
 
     let img = document.createElement("img");
-    img.src = exercises.img;
+    img.src = current.img;
+    div.appendChild(img);
 
     
 
