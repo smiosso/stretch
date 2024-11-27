@@ -15,19 +15,45 @@
     <link rel="stylesheet" href="buttons.css"></link>
     <link rel="stylesheet" href="style.css"></link>
 
+    <!-- icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
 
 
 
     <title>stretching worksheet</title>
 </head>
 <body>
-    
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Abel Colognese">
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="filters">
+            <select id="filterLimbs" onchange="filterExercises()">
+                <option value="all">All body</option>
+                <option value="option1">Upper limbs</option>
+                <option value="option2">Lower limbs</option>
+            </select>
+            <select id="filterLevels" onchange="filterExercises()">
+                <option value="all">All difficulties</option>
+                <option value="option1">Begginer</option>
+                <option value="option2">Advenced</option>
+            </select>
+
+        </div>
+
+        <!-- Container para os exercícios -->
+        <div id="exercise-container">
+            
+        </div>
 
 
-
-
-
-
+    </main>
 
 
 

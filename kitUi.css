@@ -12,9 +12,17 @@
     --yellow1: #E9A224;
 }
 
+
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('font/ChunkfiveEx.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 /* UI/Head/H1 */
-#h1 { 
-    font-family: ChunkFive;
+.h1 { 
+    font-family: 'ChunkFive', sans-serif;
     font-size: 45px;
     font-style: normal;
     font-weight: 400;
@@ -23,8 +31,8 @@
 }
 
 /* UI/Head/H2 */
-#h2 {
-    font-family: ChunkFive;
+.h2 {
+    font-family: 'ChunkFive', sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -33,8 +41,8 @@
 }
 
 /* UI/Head/H3 */
-#h3 {
-    font-family: ChunkFive;
+.h3 {
+    font-family: 'ChunkFive', sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -43,8 +51,8 @@
 }
 
 /* UI/Head/H4 */
-#h4 {
-    font-family: Poppins;
+.h4 {
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -54,8 +62,8 @@
 }
 
 /* UI/Head/H5 */
-#h5 {
-    font-family: Poppins;
+.h5 {
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -65,8 +73,8 @@
 }
 
 /* UI/Head/H6 */
-#h6 {
-    font-family: Poppins;
+.h6 {
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -76,8 +84,8 @@
 }
 
 /* UI/Text/p1 */
-#p {
-    font-family: Poppins;
+.p {
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -86,8 +94,8 @@
 }
 
 /* UI/Text/p1 bold */
-#p-bold {
-    font-family: Poppins;
+.p-bold {
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -96,8 +104,8 @@
 }
 
 /* UI/Text/p2 medium */
-#p2-medium {
-    font-family: Poppins;
+.p2-medium {
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -106,8 +114,8 @@
 }
 
 /* UI/Text/p2 medium bold */
-#p2-medium-bold {
-    font-family: Poppins;
+.p2-medium-bold {
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -116,8 +124,8 @@
 }
 
 /* UI/Text/p3 */
-#p3 {
-    font-family: Poppins;
+.p3 {
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -126,8 +134,8 @@
 }
 
 /* UI/Text/p4 */
-#p4 {
-    font-family: Poppins;
+.p4 {
+    font-family: "Poppins", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -136,9 +144,9 @@
 }
 
 /* UI/Text/a */
-#a {
+.a {
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
-    font-family: Poppins;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
