@@ -1,0 +1,147 @@
+:root{
+    --black-1: #4D4C4B;
+    --black0: #333332;
+    --black1: #1F1F1E;
+
+    --white-1: #F5F3F0;
+    --white0: #E5E4E1;  
+    --white1: #CCCBC8; 
+
+    --yellow-1: #FFB826;
+    --yellow0: #F7AD14;
+    --yellow1: #E9A224;
+}
+
+/* UI/Head/H1 */
+#h1 { 
+    font-family: ChunkFive;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 54px */
+    color: var(--white0);
+}
+
+/* UI/Head/H2 */
+#h2 {
+    font-family: ChunkFive;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 48px */
+    color: var(--white0);
+}
+
+/* UI/Head/H3 */
+#h3 {
+    font-family: ChunkFive;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 38.4px */
+    color: var(--white0);
+}
+
+/* UI/Head/H4 */
+#h4 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 28.8px */
+    text-transform: uppercase;
+    color: var(--white0);
+}
+
+/* UI/Head/H5 */
+#h5 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+    text-transform: uppercase;
+    color: var(--white0);
+}
+
+/* UI/Head/H6 */
+#h6 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 21.6px */
+    text-transform: uppercase;
+    color: var(--white0);
+}
+
+/* UI/Text/p1 */
+#p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 21.6px */
+    color: var(--white0);
+}
+
+/* UI/Text/p1 bold */
+#p-bold {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 21.6px */
+    color: var(--white0);
+}
+
+/* UI/Text/p2 medium */
+#p2-medium {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    color: var(--white0);
+}
+
+/* UI/Text/p2 medium bold */
+#p2-medium-bold {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+    color: var(--white0);
+}
+
+/* UI/Text/p3 */
+#p3 {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+    color: var(--white0);
+}
+
+/* UI/Text/p4 */
+#p4 {
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 14.4px */
+    color: var(--white0);
+}
+
+/* UI/Text/a */
+#a {
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 14.4px */
+    color: var(--white0);
+}
