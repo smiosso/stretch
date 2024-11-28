@@ -5,8 +5,21 @@
     box-sizing: border-box;
 }
 
+body {
+    margin-left: 150px;
+    margin-right: 150px;
+}
 
 header {
-    margin-left: 150px;
     margin-top: 20px;
+}
+
+.filters {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+img {
+    width: 250px;
+    height: auto;
 }

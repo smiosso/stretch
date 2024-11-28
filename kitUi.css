@@ -21,7 +21,7 @@
   }
 
 /* UI/Head/H1 */
-.h1 { 
+h1 { 
     font-family: 'ChunkFive', sans-serif;
     font-size: 45px;
     font-style: normal;
@@ -31,7 +31,7 @@
 }
 
 /* UI/Head/H2 */
-.h2 {
+h2 {
     font-family: 'ChunkFive', sans-serif;
     font-size: 40px;
     font-style: normal;
@@ -41,7 +41,7 @@
 }
 
 /* UI/Head/H3 */
-.h3 {
+h3 {
     font-family: 'ChunkFive', sans-serif;
     font-size: 32px;
     font-style: normal;
@@ -51,7 +51,7 @@
 }
 
 /* UI/Head/H4 */
-.h4 {
+h4 {
     font-family: "Poppins", sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -62,7 +62,7 @@
 }
 
 /* UI/Head/H5 */
-.h5 {
+h5 {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -73,7 +73,7 @@
 }
 
 /* UI/Head/H6 */
-.h6 {
+h6 {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -84,7 +84,7 @@
 }
 
 /* UI/Text/p1 */
-.p {
+p {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-style: normal;
