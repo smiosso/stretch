@@ -8,8 +8,8 @@ let exercises = [
             mistakesDescription: "Lie on your back on the floor, feet hip-width apart and flat on the ground, palms facing up, chin tucked in, and shoulder blades retracted. Inhale fully, then forcefully exhale through your mouth, closing your ribs in the process. Keep the ribs closed and contract your abdomen by pulling your belly button inward as if trying to touch it to your spine. Maintain normal breathing without losing the contraction.",
         },
         img: "/img_alongamentos/0.0-bracing.png",
-        limb: "all",
-        difficulty: "all"
+        limb: "upper",
+        difficulty: "advanced"
     },
     {
         title: "Standing calves",
@@ -38,49 +38,94 @@ let exercises = [
 ];
 
 let main = document.querySelector("main");
+let containerExercises = document.getElementById("containerExercises");
 
-for (let i = 0; i < exercises.length; i++) {
-    let current = exercises[i];
+function renderFunction(exercises) {  
+
+    containerExercises.innerHTML = "";
+
+    for (let i = 0; i < exercises.length; i++) {
+        let current = exercises[i];
+
+        let div = document.createElement("div");
+        containerExercises.appendChild(div);
+        div.className = "exercise-container";
+
+        let checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        div.appendChild(checkbox);
+
+        let title = document.createElement("h6");
+        div.appendChild(title);
+        title.textContent = current.title;
+
+        let icon = document.createElement("i");
+        icon.classList.add("far", "fa-circle-down");
+        icon.addEventListener("click", () => showOnlyThisElement(i));
+        div.appendChild(icon);
 
 
-    let div = document.createElement("div");
-    main.appendChild(div);
-    div.className = "exercise-container";
+        // accordion info
 
-    let checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    div.appendChild(checkbox);
+        let divAccordion = document.createElement("div");
+        containerExercises.appendChild(divAccordion);
+        divAccordion.className = "divAccordion";
+        divAccordion.style.display = "none";
 
-    let title = document.createElement("h6");
-    div.appendChild(title);
-    title.textContent = current.title;
+        let textTitle = document.createElement("p");
+        divAccordion.appendChild(textTitle);
+        textTitle.textContent = current.text.title;
+        textTitle.className = "p-bold";
 
-    let textTitle = document.createElement("p");
-    div.appendChild(textTitle);
-    textTitle.textContent = current.text.title;
-    textTitle.className = "p-bold";
+        let textDescription = document.createElement("p");
+        divAccordion.appendChild(textDescription);
+        textDescription.textContent = current.text.description;
 
-    let textDescription = document.createElement("p");
-    div.appendChild(textDescription);
-    textDescription.textContent = current.text.description;
+        let textSubtitle = document.createElement("p");
+        divAccordion.appendChild(textSubtitle);
+        textSubtitle.textContent = current.text.subTitle;
+        textSubtitle.className = "p-bold";
 
-    let textSubtitle = document.createElement("p");
-    div.appendChild(textSubtitle);
-    textSubtitle.textContent = current.text.subTitle;
-    textSubtitle.className = "p-bold";
+        let textMistakes = document.createElement("p");
+        divAccordion.appendChild(textMistakes);
+        textMistakes.textContent = current.text.mistakesDescription;
 
-    let textMistakes = document.createElement("p");
-    div.appendChild(textMistakes);
-    textMistakes.textContent = current.text.mistakesDescription;
+        let img = document.createElement("img");
+        img.src = current.img;
+        divAccordion.appendChild(img);
 
-    let img = document.createElement("img");
-    img.src = current.img;
-    div.appendChild(img);
+    };
+};
 
+function showOnlyThisElement(index) {
+    const allDivs = document.querySelectorAll('.divAccordion');
+
+    for (let i = 0; i < allDivs.length; i++) {
+         if (i === index && allDivs[i].style.display !== "block") { 
+            allDivs[i].style.display = "block";
+            // Make the clicked div visible 
+            } else {
+                allDivs[i].style.display = "none";
+                // Hide all other divs 
+            };
+         };  
 };
 
 function filterExercises() {
-    const limbFilter = document.getElementById("filterLimbs").value;
-    const levelFilter = document.getElementById("filterLevels").value;
+    let limb = document.getElementById("filterLimbs").value;
+    let difficulty = document.getElementById("filterLevels").value;
 
+
+    let filteringResults = exercises.filter(function isConditionTrue(element) {
+        if((difficulty === "all" || element.difficulty === difficulty) && (limb === "all" || element.limb === limb)) {
+            return true;
+        } else {
+            return false;
+        }
+        });
+        
+        renderFunction(filteringResults);
+        
 };
+
+console.log(filterExercises());

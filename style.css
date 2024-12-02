@@ -23,3 +23,7 @@ img {
     width: 250px;
     height: auto;
 }
+
+/* fazer um @media print e incluir o style do vai ser salvo em pdf,
+usar o comand p com a opção se salvar pdf ao invés de usar a API para
+simplificar o processo nesse momento */
