@@ -1,5 +1,5 @@
 * {
-    background-color: var(--black0);
+    background-color: var(--black1);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,8 +15,8 @@ header {
 }
 
 .filters {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 115px;
+    margin-bottom: 115px;
     display: inline-flex;
     align-items: center;
     gap: 24px;
@@ -55,6 +55,39 @@ img {
     align-self: stretch;
     border-radius: 8px;
     background: var(--black0);
+    margin-bottom: 24px;
+}
+
+label {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.checkboxTitle {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: transparent;
+}
+
+.checkboxTitle input[type="checkbox"]:checked {
+    accent-color: var(--yellow0);
+}
+
+.checkboxTitle input[type="checkbox"]:checked + label h6 {
+    color: var(--yellow0);
+}
+
+.checkboxLabel {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+i {
+    background-color: transparent;
+    color: var(--white0);
+    cursor: pointer;
 }
 
 /* fazer um @media print e incluir o style do vai ser salvo em pdf,

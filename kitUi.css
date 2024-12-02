@@ -81,6 +81,8 @@ h6 {
     line-height: 120%; /* 21.6px */
     text-transform: uppercase;
     color: var(--white0);
+    background-color: transparent;
+
 }
 
 /* UI/Text/p1 */
