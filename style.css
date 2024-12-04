@@ -5,13 +5,14 @@
     box-sizing: border-box;
 }
 
-body {
+header {
+    margin-top: 20px;
     margin-left: 150px;
     margin-right: 150px;
 }
-
-header {
-    margin-top: 20px;
+.logo img {
+    width: 150px;
+    height: auto;
 }
 
 .filters {
@@ -20,6 +21,8 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 24px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .buttonFilter {
@@ -42,9 +45,9 @@ header {
     border-color: var(--yellow0);
 }
 
-img {
-    width: 150px;
-    height: auto;
+.containerExercises {
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .exercise-container {
@@ -55,7 +58,9 @@ img {
     align-self: stretch;
     border-radius: 8px;
     background: var(--black0);
-    margin-bottom: 24px;
+    margin-top: 24px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 label {
@@ -88,6 +93,73 @@ i {
     background-color: transparent;
     color: var(--white0);
     cursor: pointer;
+}
+
+.containerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+    margin-left: 24px;
+    background-color: var(--black0);
+    padding-top: 16px;
+}
+
+.containerInfo p {
+    margin-top: 16px;
+}
+
+.divAccordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--black0);
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 16px;
+    gap: 24px;
+    border-radius: 8px;
+}
+
+img {
+    width: 35%;
+    height: auto;
+    margin-right: 0;
+    object-fit: cover; 
+}
+
+
+.medias {
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    gap: 72px;
+}
+.instagram {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+}
+
+.rigths,
+.cref {
+    text-align: center;
+    background-color: transparent;
+}
+
+#footer {
+    display: flex;
+    width: 100%;
+    height: 121px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    background-color: var(--black0);
+    margin-top: 116px;
 }
 
 /* fazer um @media print e incluir o style do vai ser salvo em pdf,

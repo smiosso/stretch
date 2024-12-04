@@ -69,7 +69,7 @@ let exercises = [
         },
         img: "/img_alongamentos/2.1.png",
         limb: "lower",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "2.2 Iliopsoas standing on wall bars",
@@ -81,7 +81,7 @@ let exercises = [
         },
         img: "/img_alongamentos/2.2.png",
         limb: "lower",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "2.3 Iliopsoas kneeling",
@@ -93,7 +93,7 @@ let exercises = [
         },
         img: "/img_alongamentos/2.3.png",
         limb: "lower",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "2.4 Iliopsoas and rectus femoris",
@@ -129,7 +129,7 @@ let exercises = [
         },
         img: "/img_alongamentos/3.1.png",
         limb: "lower",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "3.2 Hip flexed bilateral 45°",
@@ -141,7 +141,7 @@ let exercises = [
         },
         img: "/img_alongamentos/3.2.png",
         limb: "lower",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "3.3 Hip flexed unilateral",
@@ -153,7 +153,7 @@ let exercises = [
         },
         img: "/img_alongamentos/3.3.png",
         limb: "lower",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "3.4 Hip extended",
@@ -177,7 +177,7 @@ let exercises = [
         },
         img: "/img_alongamentos/4.1.png",
         limb: "upper",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "4.2 Rhomboids in internal rotation",
@@ -189,7 +189,7 @@ let exercises = [
         },
         img: "/img_alongamentos/4.2.png",
         limb: "upper",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "4.3 Rhomboids in external rotation",
@@ -201,7 +201,7 @@ let exercises = [
         },
         img: "/img_alongamentos/4.3.png",
         limb: "upper",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "4.4 Posterior deltoid",
@@ -225,7 +225,7 @@ let exercises = [
         },
         img: "/img_alongamentos/5.1.png",
         limb: "lower",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "5.2 Cervical flexors",
@@ -237,7 +237,7 @@ let exercises = [
         },
         img: "/img_alongamentos/5.2.png",
         limb: "lower",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "5.3 Upper trapezius",
@@ -249,7 +249,7 @@ let exercises = [
         },
         img: "/img_alongamentos/5.3.png",
         limb: "lower",
-        difficulty: "begginer"
+        difficulty: "beginner"
     },
     {
         title: "5.4 Diagonal trapezius",
@@ -313,22 +313,27 @@ function renderFunction(exercises) {
         divAccordion.className = "divAccordion";
         divAccordion.style.display = "none";
 
+        // container for text info
+        let containerInfo = document.createElement("div");
+        divAccordion.appendChild(containerInfo);
+        containerInfo.className = "containerInfo";
+
         let textTitle = document.createElement("p");
-        divAccordion.appendChild(textTitle);
+        containerInfo.appendChild(textTitle);
         textTitle.textContent = current.text.title;
         textTitle.className = "p-bold";
 
         let textDescription = document.createElement("p");
-        divAccordion.appendChild(textDescription);
+        containerInfo.appendChild(textDescription);
         textDescription.textContent = current.text.description;
 
         let textSubtitle = document.createElement("p");
-        divAccordion.appendChild(textSubtitle);
+        containerInfo.appendChild(textSubtitle);
         textSubtitle.textContent = current.text.subTitle;
         textSubtitle.className = "p-bold";
 
         let textMistakes = document.createElement("p");
-        divAccordion.appendChild(textMistakes);
+        containerInfo.appendChild(textMistakes);
         textMistakes.textContent = current.text.mistakesDescription;
 
         let img = document.createElement("img");
@@ -342,15 +347,17 @@ function showOnlyThisElement(index) {
     const allDivs = document.querySelectorAll('.divAccordion');
 
     for (let i = 0; i < allDivs.length; i++) {
-         if (i === index && allDivs[i].style.display !== "block") { 
-            allDivs[i].style.display = "block";
-            // Make the clicked div visible 
-            } else {
-                allDivs[i].style.display = "none";
-                // Hide all other divs 
-            };
-         };  
-};
+        if (i === index && allDivs[i].style.display !== "flex") {
+            allDivs[i].style.display = "flex"; // Certifique-se de usar 'flex' aqui
+         // Make the clicked div visible 
+        } else {
+            allDivs[i].style.display = "none";
+            // Hide all other divs 
+        }
+    }
+}
+
+
 
 function filterExercises() {
     let limb = document.getElementById("filterLimbs").value;
