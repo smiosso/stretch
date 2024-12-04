@@ -112,7 +112,7 @@ p {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 120%; /* 19.2px */
     color: var(--white0);
     background-color: transparent;
@@ -152,7 +152,7 @@ p {
 }
 
 /* UI/Text/a */
-.a {
+a {
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     font-size: 12px;

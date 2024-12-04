@@ -143,6 +143,10 @@ img {
     background-color: transparent;
 }
 
+.medias i {
+    font-size: 14px;
+}
+
 .rigths,
 .cref {
     text-align: center;

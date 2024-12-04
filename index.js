@@ -8,7 +8,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/0.0-bracing.png",
-        limb: "upper",
+        limb: ["upper", "lower"],
         difficulty: "begginer"
     },
     {
@@ -20,7 +20,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/1.1.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "beginner"
     },
     {
@@ -32,7 +32,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/1.2.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "advanced"
     },
     {
@@ -44,7 +44,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/1.3.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "advanced"
     },
     {
@@ -56,7 +56,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/1.4.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "advanced"
     },
     {
@@ -68,7 +68,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/2.1.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "beginner"
     },
     {
@@ -80,7 +80,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/2.2.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "beginner"
     },
     {
@@ -92,7 +92,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/2.3.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "beginner"
     },
     {
@@ -104,7 +104,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/2.4.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "advanced"
     },
     {
@@ -116,7 +116,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/3.1.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "advanced"
     },
     {
@@ -128,7 +128,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/3.1.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "beginner"
     },
     {
@@ -140,7 +140,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/3.2.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "beginner"
     },
     {
@@ -152,7 +152,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/3.3.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "beginner"
     },
     {
@@ -164,7 +164,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/3.4.png",
-        limb: "lower",
+        limb: ["lower"],
         difficulty: "advanced"
     },
     {
@@ -176,7 +176,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/4.1.png",
-        limb: "upper",
+        limb: ["upper"],
         difficulty: "beginner"
     },
     {
@@ -188,7 +188,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/4.2.png",
-        limb: "upper",
+        limb: ["upper"],
         difficulty: "beginner"
     },
     {
@@ -200,7 +200,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/4.3.png",
-        limb: "upper",
+        limb: ["upper"],
         difficulty: "beginner"
     },
     {
@@ -212,7 +212,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/4.4.png",
-        limb: "upper",
+        limb: ["upper"],
         difficulty: "advanced"
     },
     {
@@ -224,7 +224,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/5.1.png",
-        limb: "lower",
+        limb: ["upper"],
         difficulty: "beginner"
     },
     {
@@ -236,7 +236,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/5.2.png",
-        limb: "lower",
+        limb: ["upper"],
         difficulty: "beginner"
     },
     {
@@ -248,7 +248,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/5.3.png",
-        limb: "lower",
+        limb: ["upper"],
         difficulty: "beginner"
     },
     {
@@ -260,7 +260,7 @@ let exercises = [
             mistakesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus magna, hendrerit nec purus eu, lobortis mattis diam. Fusce sed leo nisi.",
         },
         img: "/img_alongamentos/5.4.png",
-        limb: "lower",
+        limb: ["upper"],
         difficulty: "advanced"
     },
 ];
@@ -363,17 +363,15 @@ function filterExercises() {
     let limb = document.getElementById("filterLimbs").value;
     let difficulty = document.getElementById("filterLevels").value;
 
-
     let filteringResults = exercises.filter(function isConditionTrue(element) {
-        if((difficulty === "all" || element.difficulty === difficulty) && (limb === "all" || element.limb === limb)) {
-            return true;
-        } else {
-            return false;
-        }
-        });
+        const limbMatch = limb === "all" || element.limb.includes(limb);
+        const difficultyMatch = difficulty === "all" || element.difficulty === difficulty;
         
-        renderFunction(filteringResults);
-        
-};
+        return limbMatch && difficultyMatch;
+    });
+    
+    renderFunction(filteringResults);
+}
+
 
 console.log(filterExercises());
