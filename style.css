@@ -19,8 +19,8 @@ header {
 
 /* filters select */
 .filters {
-    margin-top: 115px;
-    margin-bottom: 115px;
+    margin-top: 75px;
+    margin-bottom: 75px;
     display: flex;
     align-items: center;
     gap: 24px;
@@ -66,6 +66,18 @@ header {
     margin-top: 24px;
     margin-left: 150px;
     margin-right: 150px;
+}
+
+@media print {
+
+    .exercise-container {
+        display: none;
+    }
+    .exercise-container.printable{
+        display: flex;
+        margin-left: 1cm;
+        margin-right: 1cm;
+    }
 }
 
 /* checkbox infos */
@@ -118,7 +130,7 @@ i {
 }
 
 .divAccordion {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -130,12 +142,22 @@ i {
     border-radius: 8px;
 }
 
+.divAccordion.checked {
+    display: flex;
+}
+
+@media print {
+    .divAccordion.printable {
+        display: flex;
+    }
+}
 img {
     width: 35%;
     height: auto;
     margin-right: 0;
     object-fit: cover; 
 }
+
 
 /* button */
 #download-btn {
@@ -199,24 +221,24 @@ img {
 /* media screen */
 @media (max-width: 768px) {
     .exercise-container {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     /* header */
     header {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 20px;
+        margin-right: 2px;
     }
     /* filters select */
     .filters {
         margin-top: 50px;
         margin-bottom: 50px;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .divAccordion {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
         flex-wrap: wrap;
     }
     img {
@@ -247,18 +269,39 @@ img {
 
 /* fazer um @media print */
 @media print {
-    body {
+    .divMasterBreak {
+        break-inside: avoid;
+    }
+    .checked {
+        display: flex;
+    }
+    
+    .notChecked,
+    .filters,
+    #download-btn,
+    #footer {
+        display: none;
+    }
+
+    * {
         background-color: var(--black1);
         color: var(--white0);
+
     }
-    .exercise-container {
-        padding: 10px;
-        margin: 10px 0;
+   
+    .divAccordion {
+        margin-left: 1cm;
+        margin-right: 1cm;
     }
     .containerInfo {
-        width: 100%;
+        width: 50%;
     }
     img {
-        width: 20%;
-}
+        width: 50%;
+    }
+    .logo {
+        display: none;
+    }
+/* break-inside: avoid; usar para deixar um exercicio por página, diz por browser pular pra próxima página */
+/* penser nas medidas da folha de ofício em cm somente dentro do print mode e não em px  */
 }

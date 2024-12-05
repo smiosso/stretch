@@ -287,6 +287,15 @@ function renderFunction(exercises) {
         let checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.id = `checkbox-${i}`;
+        checkbox.onchange = function (event){
+            if (checkbox.checked){
+                div.classList.add("printable")
+                divAccordion.classList.add("printable")
+            } else {
+                divAccordion.classList.remove("printable")
+                div.classList.remove("printable")
+            }
+        }
         checkboxTitle.appendChild(checkbox);
 
         // Create the title and link it to the checkbox with for
@@ -305,13 +314,11 @@ function renderFunction(exercises) {
         icon.addEventListener("click", () => showOnlyThisElement(i));
         div.appendChild(icon);
 
-
         // accordion info
 
         let divAccordion = document.createElement("div");
         containerExercises.appendChild(divAccordion);
         divAccordion.className = "divAccordion";
-        divAccordion.style.display = "none";
 
         // container for text info
         let containerInfo = document.createElement("div");
@@ -343,15 +350,16 @@ function renderFunction(exercises) {
     };
 };
 
+
 function showOnlyThisElement(index) {
     const allDivs = document.querySelectorAll('.divAccordion');
-
+    allDivs[index].classList.add('printable')
     for (let i = 0; i < allDivs.length; i++) {
-        if (i === index && allDivs[i].style.display !== "flex") {
-            allDivs[i].style.display = "flex"; // Certifique-se de usar 'flex' aqui
-         // Make the clicked div visible 
+        if (i === index && !allDivs[i].classList.contains("checked")) {
+            allDivs[i].classList.add("checked");
+            // Make the clicked div visible 
         } else {
-            allDivs[i].style.display = "none";
+            allDivs[i].classList.remove("checked");
             // Hide all other divs 
         }
     }
@@ -383,7 +391,7 @@ function handlePrint() {
   // Ctrl + P
   document.addEventListener('keydown', function(event) {
     if (event.ctrlKey && event.key === 'p') {
-      event.preventDefault(); // Impede o comportamento padrão do navegador (abrir a impressão)
+      event.preventDefault();
       handlePrint();
     }
   });
