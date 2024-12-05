@@ -166,6 +166,40 @@ img {
     margin-top: 116px;
 }
 
-/* fazer um @media print e incluir o style do vai ser salvo em pdf,
-usar o comand p com a opção se salvar pdf ao invés de usar a API para
-simplificar o processo nesse momento */
+#download-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    background-color: var(--yellow0);
+    border: none;
+    padding: 20px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  #download-btn i {
+    color: var(--black0);
+
+  }
+
+  #download-btn:hover {
+    background-color: var(--yellow1);
+  }
+
+/* fazer um @media print */
+@media print {
+    body {
+        background-color: var(--black1);
+        color: var(--white0);
+    }
+    .exercise-container {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .containerInfo {
+        width: 100%;
+    }
+    img {
+        width: 20%;
+}
+}

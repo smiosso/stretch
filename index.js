@@ -375,3 +375,15 @@ function filterExercises() {
 
 
 console.log(filterExercises());
+
+function handlePrint() {
+    window.print();
+  }
+
+  // Ctrl + P
+  document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.key === 'p') {
+      event.preventDefault(); // Impede o comportamento padrão do navegador (abrir a impressão)
+      handlePrint();
+    }
+  });
