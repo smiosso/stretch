@@ -387,3 +387,4 @@ function handlePrint() {
       handlePrint();
     }
   });
+

@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+/* header */
 header {
     margin-top: 20px;
     margin-left: 150px;
@@ -15,14 +17,16 @@ header {
     height: auto;
 }
 
+/* filters select */
 .filters {
     margin-top: 115px;
     margin-bottom: 115px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 24px;
     margin-left: 150px;
     margin-right: 150px;
+    flex-wrap: wrap;
 }
 
 .buttonFilter {
@@ -45,6 +49,7 @@ header {
     border-color: var(--yellow0);
 }
 
+/* exercises */
 .containerExercises {
     margin-left: 150px;
     margin-right: 150px;
@@ -63,6 +68,7 @@ header {
     margin-right: 150px;
 }
 
+/* checkbox infos */
 label {
     background-color: transparent;
     cursor: pointer;
@@ -89,12 +95,14 @@ label {
     gap: 8px;
 }
 
+/* checkbox icon accordion */
 i {
     background-color: transparent;
     color: var(--white0);
     cursor: pointer;
 }
 
+/* accordion infos */
 .containerInfo {
     display: flex;
     flex-direction: column;
@@ -129,13 +137,35 @@ img {
     object-fit: cover; 
 }
 
+/* button */
+#download-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    background-color: var(--yellow0);
+    border: none;
+    padding: 20px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
 
+#download-btn i {
+    color: var(--black0);
+
+}
+
+#download-btn:hover {
+    background-color: var(--yellow1);
+}
+
+/* footer */
 .medias {
     background-color: transparent;
     display: flex;
     align-items: flex-start;
     gap: 72px;
 }
+
 .instagram {
     display: flex;
     align-items: center;
@@ -166,25 +196,54 @@ img {
     margin-top: 116px;
 }
 
-#download-btn {
-    position: fixed;
-    bottom: 20px;
-    left: 50px;
-    background-color: var(--yellow0);
-    border: none;
-    padding: 20px 20px;
-    border-radius: 50px;
-    cursor: pointer;
-  }
+/* media screen */
+@media (max-width: 768px) {
+    .exercise-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    /* header */
+    header {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    /* filters select */
+    .filters {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .divAccordion {
+        margin-left: 50px;
+        margin-right: 50px;
+        flex-wrap: wrap;
+    }
+    img {
+        width: calc(100% - 48px);
+        height: auto;
+        margin-left: 24px;
 
-  #download-btn i {
-    color: var(--black0);
+    }
+    .containerInfo {
+        width: calc(100% - 48px);
+        margin-left: 24px;
+        padding-top: 0;
 
-  }
+    }
+    /* button */
+    #download-btn {
+        position: fixed;
+        bottom: 20px;
+        left: calc(100% - 110px);
+        background-color: var(--yellow0);
+        border: none;
+        padding: 20px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
 
-  #download-btn:hover {
-    background-color: var(--yellow1);
-  }
+}
 
 /* fazer um @media print */
 @media print {
